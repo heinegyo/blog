@@ -44,3 +44,7 @@
 .m-opacity-mini{
 	opacity: 0.8 !important;
 }
+/*----------display--------  */
+.m-inline-block{
+	display: inline-block !important;
+}
