@@ -56,3 +56,7 @@
 .m-inline-block{
 	display: inline-block !important;
 }
+.m-cotainer{
+	max-width: 72em!important;
+	margin:  auto !important;
+}
