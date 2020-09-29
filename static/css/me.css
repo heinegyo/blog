@@ -5,7 +5,9 @@
 .m-padded-tiny{
 	padding: 0.3em !important;
 }
-
+.m-padded{
+	padding: 1em !important; 
+}
 .m-padded-tb-mini{
 	padding-top: 0.2em !important;
 	padding-bottom: 0.2em !important;
@@ -38,8 +40,17 @@
 	padding-top:5em !important;
 	padding-bottom: 5em !important;
 }
-
+/* ------margin------- */
+.m-margin-tb-tiny{
+	margin-top: 0.3em !important;
+	margin-bottom: 0.3em !important;
+}
 /* -----text----- */
+.m-text{
+	font-weight: 300 !important;
+	letter-spacing:  1px !important;
+	line-height: 1.8;
+}
 .m-text-thin{
 	font-weight: 300 !important;
 }
@@ -56,7 +67,13 @@
 .m-inline-block{
 	display: inline-block !important;
 }
+<<<<<<< HEAD
 .m-cotainer{
 	max-width: 72em!important;
 	margin:  auto !important;
+=======
+.m-container{
+	max-width: 72em !important;
+	margin: auto;
+>>>>>>> 67c8d29
 }
