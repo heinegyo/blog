@@ -68,15 +68,123 @@
 						</div>
                         <!--點贊	-->
 						<div class="ui center aligned basic segment">
-							<button class="ui teal basic circular button">點贊</button>
+							<button id="payButton" class="ui teal basic circular button">追蹤</button>
 						</div>
-
+						<div class="ui payQR flowing popup top left transition hidden">
+							<div class="ui teal basic label">
+								<div class="ui images">
+									<div class="image">
+										<img src="images/IMG_2949.JPG" alt="" class="ui rounded bordered image" style="width: 120px">
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="ui attached positive message">
-						部落格資訊
+					<!--blog 資訊-->
+						<div class="ui middle aligned grid">
+							<div class="eleven wide column">
+								<ui class="list">
+									<li>作者：王小明</li>
+									<li>發表時間：2020-10-04 21:40</li>
+									<li>版權聲明:自由轉載-非商用-</li>
+									<li>分享請註明作者出處</li>
+								</ui>
+							</div>
+							<div class="five wide column">
+								<img src="images/IMG_2949.JPG" alt="" class="ui right floated rounded bordered image" style="width: 110px">
+							</div>
+						</div>
 					</div>
 					<div class="ui attached segment">
-						留言區域
+						<!--留言區域-->
+						<div class="ui blue segment">
+							<div class="ui comments">
+								<h3 class="ui dividing header">Comments</h3>
+								<div class="comment">
+									<a class="avatar">
+										<img src="/images/avatar/small/matt.jpg">
+									</a>
+									<div class="content">
+										<a class="author">Matt</a>
+										<div class="metadata">
+											<span class="date">Today at 5:42PM</span>
+										</div>
+										<div class="text">
+											How artistic!
+										</div>
+										<div class="actions">
+											<a class="reply">Reply</a>
+										</div>
+									</div>
+								</div>
+								<div class="comment">
+									<a class="avatar">
+										<img src="/images/avatar/small/elliot.jpg">
+									</a>
+									<div class="content">
+										<a class="author">Elliot Fu</a>
+										<div class="metadata">
+											<span class="date">Yesterday at 12:30AM</span>
+										</div>
+										<div class="text">
+											<p>This has been very useful for my research. Thanks as well!</p>
+										</div>
+										<div class="actions">
+											<a class="reply">Reply</a>
+										</div>
+									</div>
+									<div class="comments">
+										<div class="comment">
+											<a class="avatar">
+												<img src="/images/avatar/small/jenny.jpg">
+											</a>
+											<div class="content">
+												<a class="author">Jenny Hess</a>
+												<div class="metadata">
+													<span class="date">Just now</span>
+												</div>
+												<div class="text">
+													Elliot you are always so right :)
+												</div>
+												<div class="actions">
+													<a class="reply">Reply</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="comment">
+									<a class="avatar">
+										<img src="/images/avatar/small/joe.jpg">
+									</a>
+									<div class="content">
+										<a class="author">Joe Henderson</a>
+										<div class="metadata">
+											<span class="date">5 days ago</span>
+										</div>
+										<div class="text">
+											Dude, this is awesome. Thanks so much
+										</div>
+										<div class="actions">
+											<a class="reply">Reply</a>
+										</div>
+									</div>
+								</div>
+								<form class="ui reply form">
+									<div class="field">
+										<textarea></textarea>
+									</div>
+									<div class="ui blue labeled submit icon button">
+										<i class="icon edit"></i> Add Reply
+									</div>
+								</form>
+							</div>
+							內容
+						</div>
+						<div class="ui form">
+
+						</div>
 					</div>
 				</div>
 			</div>
@@ -114,16 +222,22 @@
 				</div>
 				<div class="ui inverted section divider"></div>
 				<p class=" m-opacity-tiny">Copyright &copy 2019 - 2020 heinegyo</p>
-			</div>	
+			</div>
 		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>	
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
-		
+
 		<script>
 			$('.menu.toggle').click(function(e){
 				e.preventDefault();
 				$('.m-item').toggleClass('m-mobile-hide');
 			});
-		</script>	
+
+			$('#payButton').popup({
+				popup:$('.payQR.popup'),
+				on:'click',
+				position:'bottom center'
+			});
+		</script>
 	</body>
 </html>
