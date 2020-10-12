@@ -441,7 +441,7 @@ h5,h6{font-size:1em;}
 						<div class="m-padded-lr-responsive">
 							<div class="ui basic teal left pointing label">方法論</div>
 						</div>
-                        <!--點贊	-->
+                        <!--贊助	-->
 						<div class="ui center aligned basic segment">
 							<button id="payButton" class="ui teal basic circular button">贊助</button>
 						</div>
@@ -471,9 +471,9 @@ h5,h6{font-size:1em;}
 							</div>
 						</div>
 					</div>
-					<div class="ui attached segment">
+					<div class="ui bottom attached segment">
 						<!--留言區域-->
-						<div class="ui blue segment">
+						<div id="comment-container" class="ui blue segment">
 							<div class="ui comments">
 								<h3 class="ui dividing header">Comments</h3>
 								<div class="comment">
@@ -576,6 +576,20 @@ h5,h6{font-size:1em;}
 					</div>
 				</div>
 			</div>
+			<div class="m-padded m-fixed m-right-bottom">
+				<div class="ui vertical icon buttons">
+					<button type="button" class="ui toc blue button">目錄</button>
+					<a href="#comment-container" class="ui blue button">留言</a>
+					<button class="ui blue button"><i class="facebook messenger icon"></i></button>
+					<a href="#" class="ui blue button"><i class="chevron up icon"></i></a>
+				</div>
+			</div>
+
+			<div class="ui toc-container flowing popup top left transition hidden">
+				生成的目錄
+			</div>
+		<br>
+		<br>
 		<!-- 底部 -->
 		<footer class="ui inverted vertical segment m-padded-tb-massive">
 			<div class="ui center aligned container">
@@ -621,10 +635,10 @@ h5,h6{font-size:1em;}
 				$('.m-item').toggleClass('m-mobile-hide');
 			});
 
-			$('#payButton').popup({
-				popup:$('.payQR.popup'),
+			$('.toc.button').popup({
+				popup:$('.toc-container'),
 				on:'click',
-				position:'bottom center'
+				position:'left center'
 			});
 		</script>
 	</body>
