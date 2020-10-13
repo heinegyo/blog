@@ -577,18 +577,22 @@ h5,h6{font-size:1em;}
 					</div>
 				</div>
 			</div>
+		<!--button block-->
 			<div class="m-padded m-fixed m-right-bottom">
 				<div class="ui vertical icon buttons">
 					<button type="button" class="ui toc blue button">目錄</button>
 					<a href="#comment-container" class="ui blue button">留言</a>
-					<button class="ui blue button"><i class="facebook messenger icon"></i></button>
+					<button class="ui line blue button"><i class="facebook messenger icon"></i></button>
 					<a href="#" class="ui blue button"><i class="chevron up icon"></i></a>
 				</div>
 			</div>
-
+			<!--QR code-->
+			<div id="qrcode" class="ui lineQR flowing popup transition hidden">
+<!--				<img src="images/IMG_2949.JPG" alt="" class="ui rounded imgage" style="width: 100px">-->
+			</div>
+			<!--directory-->
 			<div class="ui toc-container flowing popup top left transition hidden" style="width: 250px !important;">
 				<ol class="js-toc">
-
 				</ol>
 			</div>
 		<br>
@@ -633,6 +637,7 @@ h5,h6{font-size:1em;}
 		<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 		<script src="lib/prism/prism.js"></script>
 		<script src="lib/tocbot/tocbot.min.js"></script>
+		<script src="lib/QRcode/qrcode.min.js"></script>
 		<script>
 			$('.menu.toggle').click(function(e){
 				e.preventDefault();
@@ -648,10 +653,23 @@ h5,h6{font-size:1em;}
 				// For headings inside relative or absolute positioned containers within content.
 				hasInnerContainers: true,
 			});
+			$('.line').popup({
+				popup:$('.lineQR'),
+				on:'hover',
+				position:'left center'
+			});
 			$('.toc.button').popup({
 				popup:$('.toc-container'),
 				on:'click',
 				position:'left center'
+			});
+			var qrcode = new QRCode("qrcode", {
+				text: "http://jindo.dev.naver.com/collie",
+				width: 110,
+				height: 110,
+				colorDark : "#000000",
+				colorLight : "#ffffff",
+				correctLevel : QRCode.CorrectLevel.H
 			});
 		</script>
 	</body>
