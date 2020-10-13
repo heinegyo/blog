@@ -34,7 +34,7 @@
 			</a>
 		</nav>
 		<!-- 內容 -->
-			<div class="m-container-small m-padded-tb-big">
+			<div id="waypoint" class="m-container-small m-padded-tb-big">
 				<div class="ui container">
 				<!--標題 -->
 					<div class="ui top attached segment">
@@ -578,7 +578,7 @@ h5,h6{font-size:1em;}
 				</div>
 			</div>
 		<!--button block-->
-			<div class="m-padded m-fixed m-right-bottom">
+			<div  id="toolbar" class="m-padded m-fixed m-right-bottom" style="display: none !important;">
 				<div class="ui vertical icon buttons">
 					<button type="button" class="ui toc blue button">目錄</button>
 					<a href="#comment-container" class="ui blue button">留言</a>
@@ -639,6 +639,7 @@ h5,h6{font-size:1em;}
 		<script src="lib/prism/prism.js"></script>
 		<script src="lib/tocbot/tocbot.min.js"></script>
 		<script src="lib/QRcode/qrcode.min.js"></script>
+		<script src="lib/waypoints/jquery.waypoints.min.js"></script>
 
 		<script>
 			$('.menu.toggle').click(function(e){
@@ -677,6 +678,19 @@ h5,h6{font-size:1em;}
 			$('#toTop-button').click(function (){
 				$(window).scrollTo(0,1000);
 			});
+
+			var waypoint = new Waypoint({
+				element: document.getElementById('waypoint'),
+				handler: function(direction) {
+					if(direction == 'down'){
+						$('#toolbar').show(100);
+					}else{
+						$('#toolbar').hide(500);
+					}
+
+					console.log('Scrolled to waypoint!'+direction)
+				}
+			})
 		</script>
 	</body>
 </html>
