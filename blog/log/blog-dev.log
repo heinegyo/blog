@@ -1360,3 +1360,545 @@ com.lrm.blog.NotFoundException: 此篇文章已經不存在了
 2020-10-16 08:18:00.714  INFO 2103 --- [Thread-20] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@82533a9: startup date [Thu Oct 15 22:25:52 CST 2020]; root of context hierarchy
 2020-10-16 08:18:00.730  INFO 2103 --- [Thread-20] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
 2020-10-16 08:18:00.732  INFO 2103 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:34:15.069  INFO 2995 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 2995 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-16 11:34:15.070 DEBUG 2995 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-16 11:34:15.070  INFO 2995 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-16 11:34:15.439  INFO 2995 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51411e42: startup date [Fri Oct 16 11:34:15 CST 2020]; root of context hierarchy
+2020-10-16 11:34:17.272  INFO 2995 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-16 11:34:17.283  INFO 2995 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 11:34:17.283  INFO 2995 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-16 11:34:17.353  INFO 2995 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 11:34:17.354  INFO 2995 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1917 ms
+2020-10-16 11:34:17.526  INFO 2995 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-16 11:34:17.531  INFO 2995 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-16 11:34:17.532  INFO 2995 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-16 11:34:17.532  INFO 2995 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-16 11:34:17.532  INFO 2995 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-16 11:34:18.288  INFO 2995 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:34:18.304  INFO 2995 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-16 11:34:18.408  INFO 2995 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-10-16 11:34:18.409  INFO 2995 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-16 11:34:18.411  INFO 2995 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-10-16 11:34:18.541  INFO 2995 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-10-16 11:34:18.760  INFO 2995 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-16 11:34:18.972  INFO 2995 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-16 11:34:19.000  INFO 2995 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:34:19.504  INFO 2995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51411e42: startup date [Fri Oct 16 11:34:15 CST 2020]; root of context hierarchy
+2020-10-16 11:34:19.599  INFO 2995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.index()
+2020-10-16 11:34:19.603  INFO 2995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-16 11:34:19.603  INFO 2995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-16 11:34:19.653  INFO 2995 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:34:19.653  INFO 2995 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:34:19.673  INFO 2995 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-16 11:34:19.697  INFO 2995 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:34:20.329  INFO 2995 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 11:34:20.378  INFO 2995 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-16 11:34:20.434  INFO 2995 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-16 11:34:20.440  INFO 2995 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 5.819 seconds (JVM running for 7.186)
+2020-10-16 11:34:23.282  INFO 2995 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-16 11:34:23.282  INFO 2995 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-16 11:34:23.319  INFO 2995 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2020-10-16 11:34:23.418  INFO 2995 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : -----doBefore--------
+2020-10-16 11:34:23.428 ERROR 2995 --- [http-nio-8080-exec-1] c.l.b.h.ControllerExceptionHandler       : Request URL : http://127.0.0.1:8080/, Exception : {} 
+
+com.lrm.blog.NotFoundException: 此篇文章已經不存在了
+	at com.lrm.blog.web.indexControllor.index(indexControllor.java:16) ~[classes/:na]
+	at com.lrm.blog.web.indexControllor$$FastClassBySpringCGLIB$$f9a99212.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:738) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:52) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:52) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at com.lrm.blog.web.indexControllor$$EnhancerBySpringCGLIB$$240463ae.index(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_241]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_241]
+
+2020-10-16 11:34:23.432  WARN 2995 --- [http-nio-8080-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved exception caused by Handler execution: com.lrm.blog.NotFoundException: 此篇文章已經不存在了
+2020-10-16 11:35:16.192  INFO 2995 --- [Thread-19] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@51411e42: startup date [Fri Oct 16 11:34:15 CST 2020]; root of context hierarchy
+2020-10-16 11:35:16.197  INFO 2995 --- [Thread-19] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-10-16 11:35:16.197  INFO 2995 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:35:16.581  INFO 2995 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 2995 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-16 11:35:16.581 DEBUG 2995 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-16 11:35:16.581  INFO 2995 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-16 11:35:16.583  INFO 2995 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@445ebc0: startup date [Fri Oct 16 11:35:16 CST 2020]; root of context hierarchy
+2020-10-16 11:35:17.445  INFO 2995 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-16 11:35:17.445  INFO 2995 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 11:35:17.445  INFO 2995 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-16 11:35:17.457  INFO 2995 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 11:35:17.457  INFO 2995 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 874 ms
+2020-10-16 11:35:17.541  INFO 2995 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-16 11:35:17.542  INFO 2995 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-16 11:35:17.542  INFO 2995 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-16 11:35:17.542  INFO 2995 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-16 11:35:17.542  INFO 2995 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-16 11:35:17.729  INFO 2995 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:35:17.730  INFO 2995 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-16 11:35:17.739  INFO 2995 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-16 11:35:17.748  INFO 2995 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-16 11:35:17.749  INFO 2995 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:35:17.980  INFO 2995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@445ebc0: startup date [Fri Oct 16 11:35:16 CST 2020]; root of context hierarchy
+2020-10-16 11:35:18.009  INFO 2995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.index()
+2020-10-16 11:35:18.011  INFO 2995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-16 11:35:18.012  INFO 2995 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-16 11:35:18.040  INFO 2995 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:35:18.040  INFO 2995 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:35:18.052  INFO 2995 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-16 11:35:18.061  INFO 2995 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:35:18.329  INFO 2995 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 11:35:18.379  INFO 2995 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-16 11:35:18.388  INFO 2995 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-16 11:35:18.390  INFO 2995 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 1.87 seconds (JVM running for 65.135)
+2020-10-16 11:35:23.635  INFO 2995 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-16 11:35:23.636  INFO 2995 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-16 11:35:23.644  INFO 2995 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-10-16 11:35:31.935  INFO 2995 --- [Thread-33] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@445ebc0: startup date [Fri Oct 16 11:35:16 CST 2020]; root of context hierarchy
+2020-10-16 11:35:31.938  INFO 2995 --- [Thread-33] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-10-16 11:35:31.939  INFO 2995 --- [Thread-33] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:35:43.492  INFO 3022 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 3022 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-16 11:35:43.492 DEBUG 3022 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-16 11:35:43.493  INFO 3022 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-16 11:35:43.670  INFO 3022 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f69e312: startup date [Fri Oct 16 11:35:43 CST 2020]; root of context hierarchy
+2020-10-16 11:35:45.512  INFO 3022 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-16 11:35:45.519  INFO 3022 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 11:35:45.520  INFO 3022 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-16 11:35:45.593  INFO 3022 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 11:35:45.594  INFO 3022 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1927 ms
+2020-10-16 11:35:45.722  INFO 3022 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-16 11:35:45.726  INFO 3022 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-16 11:35:45.727  INFO 3022 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-16 11:35:45.727  INFO 3022 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-16 11:35:45.728  INFO 3022 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-16 11:35:46.168  INFO 3022 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:35:46.177  INFO 3022 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-16 11:35:46.217  INFO 3022 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-10-16 11:35:46.218  INFO 3022 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-16 11:35:46.219  INFO 3022 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-10-16 11:35:46.315  INFO 3022 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-10-16 11:35:46.385  INFO 3022 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-16 11:35:46.492  INFO 3022 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-16 11:35:46.508  INFO 3022 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:35:46.859  INFO 3022 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f69e312: startup date [Fri Oct 16 11:35:43 CST 2020]; root of context hierarchy
+2020-10-16 11:35:46.930  INFO 3022 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.index()
+2020-10-16 11:35:46.934  INFO 3022 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-16 11:35:46.934  INFO 3022 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-16 11:35:46.977  INFO 3022 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:35:46.977  INFO 3022 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:35:46.994  INFO 3022 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-16 11:35:47.017  INFO 3022 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:35:47.520  INFO 3022 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 11:35:47.562  INFO 3022 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-16 11:35:47.609  INFO 3022 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-16 11:35:47.613  INFO 3022 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 4.368 seconds (JVM running for 5.199)
+2020-10-16 11:35:51.301  INFO 3022 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-16 11:35:51.301  INFO 3022 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-16 11:35:51.324  INFO 3022 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2020-10-16 11:38:57.174  INFO 3022 --- [http-nio-8080-exec-10] com.lrm.blog.aspect.LogAspect            : -----doBefore--------
+2020-10-16 11:38:57.178  INFO 3022 --- [http-nio-8080-exec-10] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-16 11:39:03.580  INFO 3022 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : -----doBefore--------
+2020-10-16 11:39:03.580  INFO 3022 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-16 11:39:19.778  INFO 3022 --- [Thread-16] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f69e312: startup date [Fri Oct 16 11:35:43 CST 2020]; root of context hierarchy
+2020-10-16 11:39:19.780  INFO 3022 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-10-16 11:39:19.781  INFO 3022 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:39:20.336  INFO 3022 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 3022 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-16 11:39:20.337 DEBUG 3022 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-16 11:39:20.337  INFO 3022 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-16 11:39:20.339  INFO 3022 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61590872: startup date [Fri Oct 16 11:39:20 CST 2020]; root of context hierarchy
+2020-10-16 11:39:20.723  INFO 3022 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-16 11:39:20.724  INFO 3022 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 11:39:20.724  INFO 3022 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-16 11:39:20.732  INFO 3022 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 11:39:20.732  INFO 3022 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 393 ms
+2020-10-16 11:39:20.783  INFO 3022 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-16 11:39:20.783  INFO 3022 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-16 11:39:20.784  INFO 3022 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-16 11:39:20.784  INFO 3022 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-16 11:39:20.784  INFO 3022 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-16 11:39:20.918  INFO 3022 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:39:20.918  INFO 3022 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-16 11:39:20.922  INFO 3022 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-16 11:39:20.928  INFO 3022 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-16 11:39:20.928  INFO 3022 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:39:21.133  INFO 3022 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61590872: startup date [Fri Oct 16 11:39:20 CST 2020]; root of context hierarchy
+2020-10-16 11:39:21.154  INFO 3022 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.index()
+2020-10-16 11:39:21.156  INFO 3022 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-16 11:39:21.156  INFO 3022 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-16 11:39:21.182  INFO 3022 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:39:21.182  INFO 3022 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:39:21.192  INFO 3022 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-16 11:39:21.200  INFO 3022 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:39:21.430  INFO 3022 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 11:39:21.465  INFO 3022 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-16 11:39:21.474  INFO 3022 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-16 11:39:21.476  INFO 3022 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 1.393 seconds (JVM running for 219.06)
+2020-10-16 11:39:25.677  INFO 3022 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-16 11:39:25.677  INFO 3022 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-16 11:39:25.683  INFO 3022 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 6 ms
+2020-10-16 11:39:25.686  INFO 3022 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : -----doBefore--------
+2020-10-16 11:39:25.688  INFO 3022 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : -----doAfter---------
+2020-10-16 11:39:25.689  INFO 3022 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-16 11:41:12.604  INFO 3022 --- [Thread-31] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61590872: startup date [Fri Oct 16 11:39:20 CST 2020]; root of context hierarchy
+2020-10-16 11:41:12.607  INFO 3022 --- [Thread-31] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-10-16 11:41:12.607  INFO 3022 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:42:48.224  INFO 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 3069 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-16 11:42:48.225 DEBUG 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-16 11:42:48.225  INFO 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-16 11:42:48.386  INFO 3069 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24d454a4: startup date [Fri Oct 16 11:42:48 CST 2020]; root of context hierarchy
+2020-10-16 11:42:50.227  INFO 3069 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-16 11:42:50.236  INFO 3069 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 11:42:50.236  INFO 3069 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-16 11:42:50.305  INFO 3069 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 11:42:50.306  INFO 3069 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1922 ms
+2020-10-16 11:42:50.432  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-16 11:42:50.435  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-16 11:42:50.436  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-16 11:42:50.436  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-16 11:42:50.437  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-16 11:42:50.870  INFO 3069 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:42:50.881  INFO 3069 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-16 11:42:50.924  INFO 3069 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-10-16 11:42:50.926  INFO 3069 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-16 11:42:50.927  INFO 3069 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-10-16 11:42:51.027  INFO 3069 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-10-16 11:42:51.102  INFO 3069 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-16 11:42:51.218  INFO 3069 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-16 11:42:51.233  INFO 3069 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:42:51.583  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24d454a4: startup date [Fri Oct 16 11:42:48 CST 2020]; root of context hierarchy
+2020-10-16 11:42:51.747  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}/{name}],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.index()
+2020-10-16 11:42:51.757  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-16 11:42:51.758  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-16 11:42:52.043  INFO 3069 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:42:52.043  INFO 3069 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:42:52.082  INFO 3069 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-16 11:42:52.126  INFO 3069 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:42:52.816  INFO 3069 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 11:42:52.867  INFO 3069 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-16 11:42:52.920  INFO 3069 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-16 11:42:52.924  INFO 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 4.936 seconds (JVM running for 5.805)
+2020-10-16 11:42:55.116  INFO 3069 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-16 11:42:55.117  INFO 3069 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-16 11:42:55.138  INFO 3069 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2020-10-16 11:42:55.191  INFO 3069 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : -----doBefore--------
+2020-10-16 11:42:55.193  INFO 3069 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : -----doAfter---------
+2020-10-16 11:42:55.193  INFO 3069 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-16 11:43:22.452  INFO 3069 --- [Thread-16] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24d454a4: startup date [Fri Oct 16 11:42:48 CST 2020]; root of context hierarchy
+2020-10-16 11:43:22.455  INFO 3069 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-10-16 11:43:22.456  INFO 3069 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:43:22.775  INFO 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 3069 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-16 11:43:22.775 DEBUG 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-16 11:43:22.775  INFO 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-16 11:43:22.777  INFO 3069 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7497ffc: startup date [Fri Oct 16 11:43:22 CST 2020]; root of context hierarchy
+2020-10-16 11:43:23.535  INFO 3069 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-16 11:43:23.536  INFO 3069 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 11:43:23.536  INFO 3069 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-16 11:43:23.546  INFO 3069 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 11:43:23.546  INFO 3069 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 769 ms
+2020-10-16 11:43:23.613  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-16 11:43:23.614  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-16 11:43:23.614  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-16 11:43:23.614  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-16 11:43:23.614  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-16 11:43:23.796  INFO 3069 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:43:23.796  INFO 3069 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-16 11:43:23.804  INFO 3069 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-16 11:43:23.812  INFO 3069 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-16 11:43:23.812  INFO 3069 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:43:24.022  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7497ffc: startup date [Fri Oct 16 11:43:22 CST 2020]; root of context hierarchy
+2020-10-16 11:43:24.049  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}/{name}],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.index()
+2020-10-16 11:43:24.052  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-16 11:43:24.052  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-16 11:43:24.091  INFO 3069 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:43:24.091  INFO 3069 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:43:24.105  INFO 3069 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-16 11:43:24.115  INFO 3069 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:43:24.342  INFO 3069 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 11:43:24.376  INFO 3069 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-16 11:43:24.385  INFO 3069 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-16 11:43:24.387  INFO 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 1.656 seconds (JVM running for 37.267)
+2020-10-16 11:43:25.802  INFO 3069 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-16 11:43:25.803  INFO 3069 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-16 11:43:25.811  INFO 3069 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 7 ms
+2020-10-16 11:43:25.814  INFO 3069 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : -----doBefore--------
+2020-10-16 11:43:25.816  INFO 3069 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : -----doAfter---------
+2020-10-16 11:43:25.816  INFO 3069 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-16 11:46:15.222  INFO 3069 --- [Thread-25] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7497ffc: startup date [Fri Oct 16 11:43:22 CST 2020]; root of context hierarchy
+2020-10-16 11:46:15.225  INFO 3069 --- [Thread-25] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-10-16 11:46:15.225  INFO 3069 --- [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:46:15.701  INFO 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 3069 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-16 11:46:15.702 DEBUG 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-16 11:46:15.702  INFO 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-16 11:46:15.703  INFO 3069 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@76d5ac8a: startup date [Fri Oct 16 11:46:15 CST 2020]; root of context hierarchy
+2020-10-16 11:46:16.110  INFO 3069 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-16 11:46:16.111  INFO 3069 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 11:46:16.111  INFO 3069 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-16 11:46:16.118  INFO 3069 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 11:46:16.118  INFO 3069 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 415 ms
+2020-10-16 11:46:16.165  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-16 11:46:16.165  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-16 11:46:16.165  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-16 11:46:16.165  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-16 11:46:16.165  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-16 11:46:16.293  INFO 3069 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:46:16.293  INFO 3069 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-16 11:46:16.299  INFO 3069 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-16 11:46:16.306  INFO 3069 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-16 11:46:16.307  INFO 3069 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:46:16.495  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@76d5ac8a: startup date [Fri Oct 16 11:46:15 CST 2020]; root of context hierarchy
+2020-10-16 11:46:16.517  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}/{name}],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.index()
+2020-10-16 11:46:16.518  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-16 11:46:16.519  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-16 11:46:16.543  INFO 3069 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:46:16.543  INFO 3069 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:46:16.553  INFO 3069 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-16 11:46:16.562  INFO 3069 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 11:46:16.762  INFO 3069 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 11:46:16.797  INFO 3069 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-16 11:46:16.805  INFO 3069 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-16 11:46:16.806  INFO 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 1.306 seconds (JVM running for 209.684)
+2020-10-16 11:46:22.273  INFO 3069 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-16 11:46:22.273  INFO 3069 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-16 11:46:22.281  INFO 3069 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-10-16 11:46:22.284  INFO 3069 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/3/hello', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[]}
+2020-10-16 11:46:22.286  INFO 3069 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : -----doAfter---------
+2020-10-16 11:46:22.286  INFO 3069 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-16 13:53:25.724  INFO 3069 --- [Thread-32] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@76d5ac8a: startup date [Fri Oct 16 11:46:15 CST 2020]; root of context hierarchy
+2020-10-16 13:53:25.736  INFO 3069 --- [Thread-32] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-10-16 13:53:25.737  INFO 3069 --- [Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 13:53:27.249  INFO 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 3069 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-16 13:53:27.250 DEBUG 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-16 13:53:27.250  INFO 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-16 13:53:27.260  INFO 3069 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69b9c93a: startup date [Fri Oct 16 13:53:27 CST 2020]; root of context hierarchy
+2020-10-16 13:53:28.247  INFO 3069 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-16 13:53:28.247  INFO 3069 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 13:53:28.248  INFO 3069 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-16 13:53:28.261  INFO 3069 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 13:53:28.262  INFO 3069 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1002 ms
+2020-10-16 13:53:28.378  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-16 13:53:28.379  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-16 13:53:28.379  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-16 13:53:28.379  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-16 13:53:28.379  INFO 3069 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-16 13:53:31.663  INFO 3069 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-16 13:53:31.663  INFO 3069 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-16 13:53:31.670  INFO 3069 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-16 13:53:31.678  INFO 3069 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-16 13:53:31.679  INFO 3069 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 13:53:32.068  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69b9c93a: startup date [Fri Oct 16 13:53:27 CST 2020]; root of context hierarchy
+2020-10-16 13:53:32.173  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}/{name}],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.index()
+2020-10-16 13:53:32.176  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-16 13:53:32.176  INFO 3069 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-16 13:53:32.225  INFO 3069 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 13:53:32.225  INFO 3069 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 13:53:32.241  INFO 3069 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-16 13:53:32.255  INFO 3069 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 13:53:32.627  INFO 3069 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 13:53:32.695  INFO 3069 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-16 13:53:32.707  INFO 3069 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-16 13:53:32.710  INFO 3069 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 6.557 seconds (JVM running for 7336.269)
+2020-10-16 13:53:35.339  INFO 3069 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-16 13:53:35.340  INFO 3069 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-16 13:53:35.349  INFO 3069 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 9 ms
+2020-10-16 13:53:35.352  INFO 3069 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/3/hello', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[]}
+2020-10-16 13:53:35.355  INFO 3069 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-16 13:54:44.091  INFO 3069 --- [Thread-45] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@69b9c93a: startup date [Fri Oct 16 13:53:27 CST 2020]; root of context hierarchy
+2020-10-16 13:54:44.093  INFO 3069 --- [Thread-45] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-10-16 13:54:44.094  INFO 3069 --- [Thread-45] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 13:58:11.626  INFO 3647 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 3647 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-16 13:58:11.627 DEBUG 3647 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-16 13:58:11.628  INFO 3647 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-16 13:58:11.998  INFO 3647 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33e6a6f: startup date [Fri Oct 16 13:58:11 CST 2020]; root of context hierarchy
+2020-10-16 13:58:13.573  INFO 3647 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-16 13:58:13.580  INFO 3647 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 13:58:13.581  INFO 3647 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-16 13:58:13.647  INFO 3647 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 13:58:13.648  INFO 3647 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1683 ms
+2020-10-16 13:58:13.774  INFO 3647 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-16 13:58:13.778  INFO 3647 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-16 13:58:13.779  INFO 3647 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-16 13:58:13.779  INFO 3647 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-16 13:58:13.779  INFO 3647 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-16 13:58:14.366  INFO 3647 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-16 13:58:14.375  INFO 3647 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-16 13:58:14.428  INFO 3647 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-10-16 13:58:14.429  INFO 3647 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-16 13:58:14.430  INFO 3647 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-10-16 13:58:14.536  INFO 3647 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-10-16 13:58:14.600  INFO 3647 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-16 13:58:14.710  INFO 3647 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-16 13:58:14.726  INFO 3647 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 13:58:15.082  INFO 3647 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33e6a6f: startup date [Fri Oct 16 13:58:11 CST 2020]; root of context hierarchy
+2020-10-16 13:58:15.159  INFO 3647 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}/{name}],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.index()
+2020-10-16 13:58:15.163  INFO 3647 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-16 13:58:15.163  INFO 3647 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-16 13:58:15.207  INFO 3647 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 13:58:15.207  INFO 3647 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 13:58:15.226  INFO 3647 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-16 13:58:15.248  INFO 3647 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 13:58:15.777  INFO 3647 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 13:58:15.829  INFO 3647 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-16 13:58:15.875  INFO 3647 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-16 13:58:15.879  INFO 3647 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 4.569 seconds (JVM running for 5.479)
+2020-10-16 13:58:20.779  INFO 3647 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-16 13:58:20.780  INFO 3647 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-16 13:58:20.804  INFO 3647 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2020-10-16 13:58:20.852  INFO 3647 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/1/hello', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[]}
+2020-10-16 13:58:20.854  INFO 3647 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-16 14:02:05.274  INFO 3647 --- [Thread-16] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@33e6a6f: startup date [Fri Oct 16 13:58:11 CST 2020]; root of context hierarchy
+2020-10-16 14:02:05.277  INFO 3647 --- [Thread-16] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-10-16 14:02:05.278  INFO 3647 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 14:02:05.779  INFO 3647 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 3647 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-16 14:02:05.779 DEBUG 3647 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-16 14:02:05.779  INFO 3647 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-16 14:02:05.782  INFO 3647 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@717e4119: startup date [Fri Oct 16 14:02:05 CST 2020]; root of context hierarchy
+2020-10-16 14:02:06.676  INFO 3647 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-16 14:02:06.677  INFO 3647 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 14:02:06.677  INFO 3647 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-16 14:02:06.696  INFO 3647 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 14:02:06.697  INFO 3647 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 915 ms
+2020-10-16 14:02:06.768  INFO 3647 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-16 14:02:06.769  INFO 3647 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-16 14:02:06.769  INFO 3647 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-16 14:02:06.769  INFO 3647 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-16 14:02:06.769  INFO 3647 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-16 14:02:10.010  INFO 3647 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-16 14:02:10.010  INFO 3647 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-16 14:02:10.016  INFO 3647 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-16 14:02:10.021  INFO 3647 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-16 14:02:10.022  INFO 3647 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 14:02:10.185  INFO 3647 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@717e4119: startup date [Fri Oct 16 14:02:05 CST 2020]; root of context hierarchy
+2020-10-16 14:02:10.210  INFO 3647 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-16 14:02:10.210  INFO 3647 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-16 14:02:10.244  INFO 3647 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 14:02:10.245  INFO 3647 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 14:02:10.255  INFO 3647 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-16 14:02:10.265  INFO 3647 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 14:02:10.464  INFO 3647 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 14:02:10.497  INFO 3647 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-16 14:02:10.505  INFO 3647 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-16 14:02:10.506  INFO 3647 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 4.783 seconds (JVM running for 240.104)
+2020-10-16 14:02:11.823  INFO 3647 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-16 14:02:11.825  INFO 3647 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-16 14:02:11.838  INFO 3647 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2020-10-16 14:03:38.190  INFO 3647 --- [Thread-30] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@717e4119: startup date [Fri Oct 16 14:02:05 CST 2020]; root of context hierarchy
+2020-10-16 14:03:38.192  INFO 3647 --- [Thread-30] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-10-16 14:03:38.193  INFO 3647 --- [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 14:03:44.123  INFO 3692 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 3692 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-16 14:03:44.124 DEBUG 3692 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-16 14:03:44.124  INFO 3692 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-16 14:03:44.448  INFO 3692 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cf8842d: startup date [Fri Oct 16 14:03:44 CST 2020]; root of context hierarchy
+2020-10-16 14:03:46.551  INFO 3692 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-16 14:03:46.558  INFO 3692 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 14:03:46.559  INFO 3692 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-16 14:03:46.631  INFO 3692 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 14:03:46.631  INFO 3692 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2186 ms
+2020-10-16 14:03:46.769  INFO 3692 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-16 14:03:46.772  INFO 3692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-16 14:03:46.773  INFO 3692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-16 14:03:46.773  INFO 3692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-16 14:03:46.773  INFO 3692 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-16 14:03:47.221  INFO 3692 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-16 14:03:47.231  INFO 3692 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-16 14:03:47.274  INFO 3692 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-10-16 14:03:47.275  INFO 3692 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-16 14:03:47.276  INFO 3692 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-10-16 14:03:47.380  INFO 3692 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-10-16 14:03:47.445  INFO 3692 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-16 14:03:47.561  INFO 3692 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-16 14:03:47.577  INFO 3692 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 14:03:47.943  INFO 3692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5cf8842d: startup date [Fri Oct 16 14:03:44 CST 2020]; root of context hierarchy
+2020-10-16 14:03:48.022  INFO 3692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}/{name}],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.index(java.lang.Integer,java.lang.String)
+2020-10-16 14:03:48.025  INFO 3692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-16 14:03:48.027  INFO 3692 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-16 14:03:48.078  INFO 3692 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 14:03:48.078  INFO 3692 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 14:03:48.098  INFO 3692 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-16 14:03:48.124  INFO 3692 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-16 14:03:48.699  INFO 3692 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 14:03:48.746  INFO 3692 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-16 14:03:48.796  INFO 3692 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-16 14:03:48.801  INFO 3692 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 4.997 seconds (JVM running for 5.924)
+2020-10-16 14:03:55.566  INFO 3692 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-16 14:03:55.567  INFO 3692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-16 14:03:55.631  INFO 3692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 64 ms
+2020-10-16 14:03:55.731  INFO 3692 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/1/hello', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[1, hello]}
+2020-10-16 14:03:55.734  INFO 3692 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : Result : {}index
