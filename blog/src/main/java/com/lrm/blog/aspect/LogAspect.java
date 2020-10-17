@@ -26,10 +26,12 @@ public class LogAspect {
 
     }
 
-    @Before("log()")
+    @Before("log()")//切入點之前
     public void deBefore(JoinPoint joinPoint) {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+
         HttpServletRequest request = attributes.getRequest();
+
         String url = request.getRequestURL().toString();
         String ip = request.getRemoteAddr();
         String classMethod = joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName();
@@ -38,7 +40,7 @@ public class LogAspect {
         logger.info("RequestLog:{}", requestLog);
     }
 
-    @After("log()")
+    @After("log()")//切入點之後
     public void doAfter() {
 
 //        logger.info("-----doAfter---------");
@@ -49,7 +51,7 @@ public class LogAspect {
         logger.info("Result : {}" + result);
     }
 
-    private class RequestLog {
+    private class RequestLog {  //紀錄請求
         private String url;
         private String ip;
         private String classMethod;
