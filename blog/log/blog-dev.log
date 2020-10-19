@@ -4309,3 +4309,358 @@ org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as express
 2020-10-19 10:33:03.429  INFO 5517 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
 2020-10-19 10:33:03.477  INFO 5517 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[]}
 2020-10-19 10:33:03.479  INFO 5517 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-19 10:55:57.164  INFO 5517 --- [http-nio-8080-exec-2] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[]}
+2020-10-19 10:55:57.166  INFO 5517 --- [http-nio-8080-exec-2] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-19 10:55:57.197 ERROR 5517 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:667) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1087) [thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1061) [thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) [thymeleaf-spring4-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:189) [thymeleaf-spring4-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_241]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_241]
+Caused by: org.attoparser.ParseException: Error resolving template "-fragments", template might not exist or might not be accessible by any of the configured Template Resolvers (template: "index" - line 12, col 8)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving template "-fragments", template might not exist or might not be accessible by any of the configured Template Resolvers (template: "index" - line 12, col 8)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:865) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:251) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:562) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:367) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	... 54 common frames omitted
+
+2020-10-19 10:55:57.201 ERROR 5517 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template "-fragments", template might not exist or might not be accessible by any of the configured Template Resolvers (template: "index" - line 12, col 8)
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:865) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseStandalone(TemplateManager.java:251) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:562) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:367) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.1.RELEASE.jar:2.0.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:667) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1087) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1061) ~[thymeleaf-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.renderFragment(ThymeleafView.java:335) ~[thymeleaf-spring4-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.thymeleaf.spring4.view.ThymeleafView.render(ThymeleafView.java:189) ~[thymeleaf-spring4-3.0.2.RELEASE.jar:3.0.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_241]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_241]
+
+2020-10-19 10:56:19.581  INFO 5517 --- [Thread-19] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@52bb1785: startup date [Mon Oct 19 10:32:55 CST 2020]; root of context hierarchy
+2020-10-19 10:56:19.586  INFO 5517 --- [Thread-19] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-10-19 10:56:19.587  INFO 5517 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-19 10:56:23.466  INFO 6228 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 6228 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-19 10:56:23.467 DEBUG 6228 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-19 10:56:23.467  INFO 6228 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-19 10:56:23.750  INFO 6228 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@166d09cb: startup date [Mon Oct 19 10:56:23 CST 2020]; root of context hierarchy
+2020-10-19 10:56:25.505  INFO 6228 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-19 10:56:25.514  INFO 6228 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 10:56:25.514  INFO 6228 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-19 10:56:25.579  INFO 6228 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-19 10:56:25.580  INFO 6228 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1836 ms
+2020-10-19 10:56:25.703  INFO 6228 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-19 10:56:25.706  INFO 6228 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-19 10:56:25.706  INFO 6228 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-19 10:56:25.706  INFO 6228 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-19 10:56:25.706  INFO 6228 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-19 10:56:26.131  INFO 6228 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-19 10:56:26.139  INFO 6228 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-19 10:56:26.179  INFO 6228 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-10-19 10:56:26.181  INFO 6228 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-19 10:56:26.182  INFO 6228 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-10-19 10:56:26.279  INFO 6228 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-10-19 10:56:26.355  INFO 6228 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-19 10:56:26.464  INFO 6228 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-19 10:56:26.480  INFO 6228 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-19 10:56:26.831  INFO 6228 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@166d09cb: startup date [Mon Oct 19 10:56:23 CST 2020]; root of context hierarchy
+2020-10-19 10:56:26.901  INFO 6228 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.index()
+2020-10-19 10:56:26.905  INFO 6228 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-19 10:56:26.905  INFO 6228 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-19 10:56:26.946  INFO 6228 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-19 10:56:26.947  INFO 6228 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-19 10:56:26.964  INFO 6228 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-19 10:56:26.989  INFO 6228 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-19 10:56:27.513  INFO 6228 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-19 10:56:27.555  INFO 6228 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-19 10:56:27.599  INFO 6228 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-19 10:56:27.603  INFO 6228 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 4.446 seconds (JVM running for 5.624)
+2020-10-19 10:56:31.799  INFO 6228 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-19 10:56:31.799  INFO 6228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-19 10:56:31.822  INFO 6228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2020-10-19 10:56:31.870  INFO 6228 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[]}
+2020-10-19 10:56:31.872  INFO 6228 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-19 10:57:53.392  INFO 6228 --- [http-nio-8080-exec-5] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[]}
+2020-10-19 10:57:53.393  INFO 6228 --- [http-nio-8080-exec-5] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-19 10:57:58.028  INFO 6228 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[]}
+2020-10-19 10:57:58.029  INFO 6228 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-19 10:58:36.465  INFO 6228 --- [http-nio-8080-exec-7] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[]}
+2020-10-19 10:58:36.469  INFO 6228 --- [http-nio-8080-exec-7] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-19 10:58:49.746  INFO 6228 --- [http-nio-8080-exec-2] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[]}
+2020-10-19 10:58:49.750  INFO 6228 --- [http-nio-8080-exec-2] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-19 10:58:54.445  INFO 6228 --- [Thread-19] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@166d09cb: startup date [Mon Oct 19 10:56:23 CST 2020]; root of context hierarchy
+2020-10-19 10:58:54.450  INFO 6228 --- [Thread-19] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-10-19 10:58:54.451  INFO 6228 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-19 10:59:02.157  INFO 6260 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 6260 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-19 10:59:02.158 DEBUG 6260 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-19 10:59:02.158  INFO 6260 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-19 10:59:02.557  INFO 6260 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7786a23: startup date [Mon Oct 19 10:59:02 CST 2020]; root of context hierarchy
+2020-10-19 10:59:04.331  INFO 6260 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-19 10:59:04.339  INFO 6260 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 10:59:04.340  INFO 6260 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-19 10:59:04.446  INFO 6260 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-19 10:59:04.446  INFO 6260 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1897 ms
+2020-10-19 10:59:04.788  INFO 6260 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-19 10:59:04.795  INFO 6260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-19 10:59:04.796  INFO 6260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-19 10:59:04.796  INFO 6260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-19 10:59:04.796  INFO 6260 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-19 10:59:05.224  INFO 6260 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-19 10:59:05.233  INFO 6260 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-19 10:59:05.273  INFO 6260 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-10-19 10:59:05.274  INFO 6260 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-19 10:59:05.275  INFO 6260 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-10-19 10:59:05.373  INFO 6260 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-10-19 10:59:05.451  INFO 6260 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-19 10:59:05.579  INFO 6260 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-19 10:59:05.597  INFO 6260 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-19 10:59:05.979  INFO 6260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7786a23: startup date [Mon Oct 19 10:59:02 CST 2020]; root of context hierarchy
+2020-10-19 10:59:06.055  INFO 6260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.index()
+2020-10-19 10:59:06.060  INFO 6260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-19 10:59:06.061  INFO 6260 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-19 10:59:06.111  INFO 6260 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-19 10:59:06.111  INFO 6260 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-19 10:59:06.130  INFO 6260 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-19 10:59:06.153  INFO 6260 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-19 10:59:06.708  INFO 6260 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-19 10:59:06.754  INFO 6260 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-19 10:59:06.801  INFO 6260 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-19 10:59:06.805  INFO 6260 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 4.947 seconds (JVM running for 5.786)
+2020-10-19 10:59:12.655  INFO 6260 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-19 10:59:12.656  INFO 6260 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-19 10:59:12.678  INFO 6260 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2020-10-19 10:59:12.728  INFO 6260 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[]}
+2020-10-19 10:59:12.730  INFO 6260 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-19 11:02:35.441  INFO 6260 --- [Thread-20] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7786a23: startup date [Mon Oct 19 10:59:02 CST 2020]; root of context hierarchy
+2020-10-19 11:02:35.444  INFO 6260 --- [Thread-20] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-10-19 11:02:35.445  INFO 6260 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-19 11:04:38.985  INFO 6297 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 6297 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-19 11:04:38.987 DEBUG 6297 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-19 11:04:38.987  INFO 6297 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-19 11:04:39.356  INFO 6297 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43fdb365: startup date [Mon Oct 19 11:04:39 CST 2020]; root of context hierarchy
+2020-10-19 11:04:41.229  INFO 6297 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-19 11:04:41.237  INFO 6297 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 11:04:41.238  INFO 6297 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-19 11:04:41.303  INFO 6297 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-19 11:04:41.304  INFO 6297 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1951 ms
+2020-10-19 11:04:41.459  INFO 6297 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-19 11:04:41.462  INFO 6297 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-19 11:04:41.463  INFO 6297 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-19 11:04:41.463  INFO 6297 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-19 11:04:41.463  INFO 6297 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-19 11:04:41.935  INFO 6297 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-19 11:04:41.945  INFO 6297 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-19 11:04:41.989  INFO 6297 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-10-19 11:04:41.990  INFO 6297 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-19 11:04:41.991  INFO 6297 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-10-19 11:04:42.103  INFO 6297 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-10-19 11:04:42.206  INFO 6297 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-19 11:04:42.357  INFO 6297 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-19 11:04:42.375  INFO 6297 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-19 11:04:42.922  INFO 6297 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43fdb365: startup date [Mon Oct 19 11:04:39 CST 2020]; root of context hierarchy
+2020-10-19 11:04:43.009  INFO 6297 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.index()
+2020-10-19 11:04:43.015  INFO 6297 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-19 11:04:43.016  INFO 6297 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-19 11:04:43.072  INFO 6297 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-19 11:04:43.072  INFO 6297 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-19 11:04:43.093  INFO 6297 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-19 11:04:43.119  INFO 6297 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-19 11:04:43.755  INFO 6297 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-19 11:04:43.806  INFO 6297 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-19 11:04:43.864  INFO 6297 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-19 11:04:43.870  INFO 6297 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 5.275 seconds (JVM running for 6.396)
+2020-10-19 11:04:50.733  INFO 6297 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-19 11:04:50.733  INFO 6297 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-19 11:04:50.758  INFO 6297 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2020-10-19 11:04:50.811  INFO 6297 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[]}
+2020-10-19 11:04:50.814  INFO 6297 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-19 11:25:46.742  INFO 6297 --- [http-nio-8080-exec-3] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[]}
+2020-10-19 11:25:46.744  INFO 6297 --- [http-nio-8080-exec-3] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-19 11:30:31.043  INFO 6297 --- [Thread-21] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@43fdb365: startup date [Mon Oct 19 11:04:39 CST 2020]; root of context hierarchy
+2020-10-19 11:30:31.052  INFO 6297 --- [Thread-21] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-10-19 11:30:31.053  INFO 6297 --- [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-19 11:30:36.475  INFO 6478 --- [restartedMain] com.lrm.blog.BlogApplication             : Starting BlogApplication on heinegyo.local with PID 6478 (/Users/heinegyo/Documents/GitHub/blog/blog/target/classes started by heinegyo in /Users/heinegyo/Documents/GitHub/blog/blog)
+2020-10-19 11:30:36.475 DEBUG 6478 --- [restartedMain] com.lrm.blog.BlogApplication             : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2020-10-19 11:30:36.476  INFO 6478 --- [restartedMain] com.lrm.blog.BlogApplication             : The following profiles are active: dev
+2020-10-19 11:30:36.787  INFO 6478 --- [restartedMain] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3de6178d: startup date [Mon Oct 19 11:30:36 CST 2020]; root of context hierarchy
+2020-10-19 11:30:38.506  INFO 6478 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2020-10-19 11:30:38.513  INFO 6478 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-19 11:30:38.514  INFO 6478 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2020-10-19 11:30:38.572  INFO 6478 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-19 11:30:38.572  INFO 6478 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1787 ms
+2020-10-19 11:30:38.721  INFO 6478 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-10-19 11:30:38.725  INFO 6478 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-10-19 11:30:38.726  INFO 6478 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-10-19 11:30:38.726  INFO 6478 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-10-19 11:30:38.726  INFO 6478 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-10-19 11:30:39.161  INFO 6478 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-10-19 11:30:39.171  INFO 6478 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-19 11:30:39.208  INFO 6478 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-10-19 11:30:39.209  INFO 6478 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-10-19 11:30:39.210  INFO 6478 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-10-19 11:30:39.304  INFO 6478 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-10-19 11:30:39.380  INFO 6478 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-19 11:30:39.493  INFO 6478 --- [restartedMain] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-10-19 11:30:39.507  INFO 6478 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-19 11:30:39.839  INFO 6478 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3de6178d: startup date [Mon Oct 19 11:30:36 CST 2020]; root of context hierarchy
+2020-10-19 11:30:39.909  INFO 6478 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.blog()
+2020-10-19 11:30:39.910  INFO 6478 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.blog.web.indexControllor.index()
+2020-10-19 11:30:39.912  INFO 6478 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-10-19 11:30:39.913  INFO 6478 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-10-19 11:30:39.955  INFO 6478 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-19 11:30:39.955  INFO 6478 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-19 11:30:39.975  INFO 6478 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2020-10-19 11:30:39.998  INFO 6478 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-10-19 11:30:40.512  INFO 6478 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-19 11:30:40.554  INFO 6478 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-10-19 11:30:40.598  INFO 6478 --- [restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2020-10-19 11:30:40.602  INFO 6478 --- [restartedMain] com.lrm.blog.BlogApplication             : Started BlogApplication in 4.426 seconds (JVM running for 5.256)
+2020-10-19 11:30:45.177  INFO 6478 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-10-19 11:30:45.178  INFO 6478 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-10-19 11:30:45.199  INFO 6478 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2020-10-19 11:30:45.246  INFO 6478 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.index', args=[]}
+2020-10-19 11:30:45.248  INFO 6478 --- [http-nio-8080-exec-1] com.lrm.blog.aspect.LogAspect            : Result : {}index
+2020-10-19 11:30:54.682  INFO 6478 --- [http-nio-8080-exec-8] com.lrm.blog.aspect.LogAspect            : RequestLog:RequestLog{url='http://127.0.0.1:8080/blog', ip='127.0.0.1', classMethod='com.lrm.blog.web.indexControllor.blog', args=[]}
+2020-10-19 11:30:54.683  INFO 6478 --- [http-nio-8080-exec-8] com.lrm.blog.aspect.LogAspect            : Result : {}blog
