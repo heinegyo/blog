@@ -1,15 +1,14 @@
 package com.lrm.blog.po;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
-
+//@Entity 具備和資料庫相對應的能力
+//@table 對應到資料庫的table
+//@Id 代表pk
+//@GeneratedValue 代表自動產生
 @Entity
 @Table(name="t_blog")
-public class blog {
-
+public class Blog {
 
     @Id
     @GeneratedValue
@@ -19,15 +18,17 @@ public class blog {
     private String firstPicture;
     private String flag;
     private Integer views;
-    private boolean appreciation;
-    private boolean shareStatment;
+    private boolean appreciations;
+    private boolean shareStatement;
     private boolean commentabled;
     private boolean published;
     private boolean recommend;
+    @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;
+    @Temporal(TemporalType.TIMESTAMP)
     private Date updateTime;
 
-    public blog() {
+    public Blog() {
     }
 
     public Long getId() {
@@ -78,20 +79,20 @@ public class blog {
         this.views = views;
     }
 
-    public boolean isAppreciation() {
-        return appreciation;
+    public boolean isAppreciations() {
+        return appreciations;
     }
 
-    public void setAppreciation(boolean appreciation) {
-        this.appreciation = appreciation;
+    public void setAppreciations(boolean appreciations) {
+        this.appreciations = appreciations;
     }
 
-    public boolean isShareStatment() {
-        return shareStatment;
+    public boolean isShareStatement() {
+        return shareStatement;
     }
 
-    public void setShareStatment(boolean shareStatment) {
-        this.shareStatment = shareStatment;
+    public void setShareStatement(boolean shareStatement) {
+        this.shareStatement = shareStatement;
     }
 
     public boolean isCommentabled() {
@@ -134,17 +135,17 @@ public class blog {
         this.updateTime = updateTime;
     }
 
-    @Override//紀錄日誌的時候可以以這個格式輸出
+    @Override
     public String toString() {
-        return "blog{" +
+        return "Blog{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", firstPicture='" + firstPicture + '\'' +
                 ", flag='" + flag + '\'' +
                 ", views=" + views +
-                ", appreciation=" + appreciation +
-                ", shareStatment=" + shareStatment +
+                ", appreciations=" + appreciations +
+                ", shareStatement=" + shareStatement +
                 ", commentabled=" + commentabled +
                 ", published=" + published +
                 ", recommend=" + recommend +
