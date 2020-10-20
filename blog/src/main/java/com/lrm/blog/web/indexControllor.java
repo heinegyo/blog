@@ -11,12 +11,6 @@ public class indexControllor {
     @GetMapping("/")
     public String index() {
 
-//        String blog  = null;
-//
-//        if(blog == null){
-//            throw new NotFoundException("此篇文章已經不存在了");
-//        }
-//        System.out.println("--index---");
         return "index";
     }
 
@@ -24,4 +18,5 @@ public class indexControllor {
     public String blog() {
         return "blog";
     }
+    
 }
