@@ -28,8 +28,9 @@ public class LogAspect {
 
     @Before("log()")//切入點之前
     public void deBefore(JoinPoint joinPoint) {
+        // 接收請求，並記錄請求內容
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-
+        //獲取請求
         HttpServletRequest request = attributes.getRequest();
 
         String url = request.getRequestURL().toString();
